@@ -22,7 +22,7 @@
 }
 
 .hero-title {
-    font-size: 4rem;
+    font-size: 4.2rem;
     margin-bottom: 1.5rem;
     line-height: 1.1;
     color: #333;
@@ -31,10 +31,11 @@
 .hero-title .highlight {
     color: #971A08;
     font-weight: 700;
+    text-shadow: 3px 3px 12px rgba(151, 26, 8, 0.3);
 }
 
 .hero-subtitle {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
     font-weight: 400;
     color: #333;
     margin-bottom: 1.5rem;
@@ -47,11 +48,11 @@
 }
 
 .hero-description {
-    font-size: 1rem;
+    font-size: 1.05rem;
     color: #6c757d;
     line-height: 1.8;
     margin-bottom: 2.5rem;
-    max-width: 500px;
+    max-width: 520px;
 }
 
 /* Hero Buttons */
@@ -98,7 +99,7 @@
 }
 
 .circular-image {
-    width: 500px;
+    width: 560px;
     height: auto;
 }
 
@@ -123,7 +124,7 @@
     }
 
     .circular-image {
-        width: 400px;
+        width: 450px;
     }
 }
 
