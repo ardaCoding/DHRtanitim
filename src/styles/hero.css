@@ -1,0 +1,165 @@
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    align-items: center;
+    padding: 120px 20px 80px;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+/* Hero Content - Sol Taraf */
+.hero-content {
+    padding-right: 40px;
+}
+
+.hero-title {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.1;
+    color: #333;
+}
+
+.hero-title .highlight {
+    color: #971A08;
+    font-weight: 700;
+}
+
+.hero-subtitle {
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #333;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+.hero-subtitle .location {
+    font-weight: 600;
+    color: #333;
+}
+
+.hero-description {
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    max-width: 500px;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.btn-demo {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 32px;
+    background: transparent;
+    color: #4169E1;
+    border: 2px solid #E8ECFF;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-demo:hover {
+    background: #4169E1;
+    color: white;
+    border-color: #4169E1;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(65, 105, 225, 0.2);
+}
+
+.btn-demo svg {
+    width: 16px;
+    height: 16px;
+}
+
+/* Hero Image - Sağ Taraf - Düz Görsel */
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circular-image {
+    width: 500px;
+    height: auto;
+}
+
+.circular-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .hero-container {
+        gap: 50px;
+    }
+
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 2rem;
+    }
+
+    .circular-image {
+        width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 100px 20px 60px;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding-right: 0;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .circular-image {
+        width: 300px;
+    }
+}
