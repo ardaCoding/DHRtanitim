@@ -1,0 +1,79 @@
+/* Contact Section */
+.contact-detail::before {
+    position: absolute;
+    content: "";
+    height: 50%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(rgb(248, 249, 250, 1), rgba(248, 249, 250, .3));
+    background-size: cover;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.contact-map {
+    background: #971A08;
+}
+
+.contact-form {
+    background: #971A08;
+}
+
+/* Contact Section Text Primary Color */
+#iletisim .text-primary {
+    color: #971A08 !important;
+}
+
+#iletisim .bg-secondary {
+    background: #971A08 !important;
+}
+
+#iletisim h4.text-primary {
+    color: #971A08 !important;
+}
+
+#iletisim .btn.bg-primary {
+    background: #971A08 !important;
+    border-color: #971A08 !important;
+}
+
+#iletisim .btn.bg-primary:hover {
+    background: #7a1506 !important;
+    border-color: #7a1506 !important;
+}
+
+/* Form Controls */
+.contact-form .form-control {
+    background: white;
+    border-radius: 5px;
+}
+
+.contact-form .form-control:focus {
+    box-shadow: 0 0 0 0.25rem rgba(151, 26, 8, 0.25);
+    border-color: #971A08;
+}
+
+/* Contact Info Links */
+.contact-detail a.h5 {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-detail a.h5:hover {
+    color: #971A08;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-detail {
+        padding: 2rem !important;
+    }
+    
+    .contact-map,
+    .contact-form {
+        padding: 2rem !important;
+    }
+}
+

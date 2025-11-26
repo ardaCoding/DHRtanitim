@@ -1,163 +1,152 @@
 /* Modules Section */
 .modules-section {
-    padding: 80px 20px;
+    padding: 40px 20px 80px;
     background: white;
+    margin-top: -40px;
 }
 
-/* Section Headers */
-.section-label {
-    display: inline-block;
-    border: 1px solid #4169E1;
-    border-radius: 20px;
-    color: #4169E1;
-    font-weight: 600;
-    padding: 5px 15px;
-    font-size: 0.9rem;
-    margin-bottom: 15px;
-}
-
-.section-subtitle {
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #1a1a2e;
-    margin-bottom: 3rem;
-}
-
-/* Service Tabs */
-.service-tab {
-    width: 100%;
-    display: flex;
+/* Modules Mini Title - Corporate Style */
+.modules-mini-title {
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.15);
+    padding: 8px 20px;
+    border-radius: 6px;
+    display: inline-flex;
     align-items: center;
-    text-align: left;
-    border: 1px solid #e8e8f0;
-    border-radius: 8px;
-    padding: 20px 25px;
-    margin-bottom: 15px;
-    background: white;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    gap: 15px;
-}
-
-.service-tab i {
-    font-size: 14px;
+    margin-bottom: 1.5rem;
+    margin-left: -23px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Jost', sans-serif;
+    letter-spacing: 1px;
     color: #4169E1;
-    transition: all 0.3s ease;
+    text-transform: uppercase;
 }
 
-.service-tab span {
+/* Service Tab Navigation */
+.modules-section .nav .nav-link {
+    transition: .5s;
+    background: white;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+}
+
+.modules-section .nav .nav-link:hover {
+    background: #f8f9fa;
+}
+
+.modules-section .nav .nav-link.active {
+    border-color: #971A08 !important;
+    background: linear-gradient(135deg, #971A08 0%, #b82010 100%);
+}
+
+.modules-section .nav .nav-link h5 {
     font-size: 1.05rem;
     font-weight: 600;
     color: #1a1a2e;
-    transition: all 0.3s ease;
+    transition: .3s;
 }
 
-.service-tab:hover,
-.service-tab.active {
-    background: linear-gradient(135deg, #4169E1 0%, #5a7ff5 100%);
-    border-color: #4169E1;
+.modules-section .nav .nav-link.active h5 {
+    color: #FFFFFF !important;
 }
 
-.service-tab:hover i,
-.service-tab.active i,
-.service-tab:hover span,
-.service-tab.active span {
-    color: white;
+.modules-section .nav .nav-link h5 i {
+    color: #333;
+    transition: .3s;
+}
+
+.modules-section .nav .nav-link.active h5 i {
+    color: #FFFFFF !important;
 }
 
 /* Tab Content */
-.tab-content {
-    width: 100%;
-}
-
-.tab-pane {
-    display: none;
-}
-
-.tab-pane.active {
-    display: block;
-}
-
-.tab-image {
-    position: relative;
-    min-height: 350px;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.tab-image img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.tab-content h3 {
+.modules-section .tab-content h3 {
     font-size: 1.5rem;
     font-weight: 700;
     color: #1a1a2e;
 }
 
-.tab-content p {
+.modules-section .tab-content p {
     color: #6c757d;
     line-height: 1.8;
 }
 
-.feature-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-.feature-item i {
-    color: #4169E1;
-    font-size: 14px;
-}
-
-.btn-read-more {
-    display: inline-block;
-    background: #4169E1;
-    color: white;
-    padding: 12px 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    font-weight: 600;
-    margin-top: 20px;
+.modules-section .tab-content .btn-primary {
+    background: #971A08;
+    border-color: #971A08;
     transition: all 0.3s ease;
 }
 
-.btn-read-more:hover {
-    background: #3458c5;
+.modules-section .tab-content .btn-primary:hover {
+    background: #7a1506;
+    border-color: #7a1506;
     transform: translateY(-2px);
 }
 
-/* Responsive */
-@media (max-width: 992px) {
-    .section-subtitle {
-        font-size: 1.75rem;
-    }
+/* Check Icons - Red Color */
+.modules-section .tab-content .text-primary {
+    color: #971A08 !important;
+}
 
-    .tab-image {
-        min-height: 250px;
+/* Image Container */
+.modules-section .position-relative img {
+    border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+    .modules-section .section-title {
+        font-size: 2rem;
+    }
+    
+    .modules-section .nav {
+        margin-bottom: 2rem;
+    }
+    
+    .modules-section .nav .nav-link {
+        margin-bottom: 1rem !important;
     }
 }
 
 @media (max-width: 768px) {
-    .section-subtitle {
-        font-size: 1.5rem;
+    .modules-section {
+        padding: 60px 15px;
     }
-
-    .service-tab {
-        padding: 15px 20px;
+    
+    .modules-section .section-title {
+        font-size: 1.75rem;
     }
-
-    .service-tab span {
+    
+    .modules-section .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    .modules-section .nav .nav-link {
+        padding: 15px 20px !important;
+    }
+    
+    .modules-section .nav .nav-link h5 {
         font-size: 0.95rem;
     }
-
-    .tab-image {
-        min-height: 200px;
+    
+    .modules-section .tab-content h3 {
+        font-size: 1.25rem;
     }
+}
+
+/* Smooth animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translate3d(0, 40px, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.fadeInUp {
+    animation: fadeInUp 0.6s ease-out;
 }

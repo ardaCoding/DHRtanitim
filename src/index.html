@@ -5,9 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DHR - Dijital İnsan Kaynakları</title>
+    
+    <!-- Google Fonts - Finanza Style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&family=Open+Sans:wght@400;500&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/features.css">
     <link rel="stylesheet" href="styles/modules.css">
+    <link rel="stylesheet" href="styles/contact.css">
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
@@ -33,122 +48,333 @@
     <main>
         <!-- Hero Section -->
         <section class="hero">
-            <div class="hero-container">
-                <!-- Sol Taraf - Metin İçeriği -->
-                <div class="hero-content">
-                    <h1 class="hero-title">
-                        <span class="highlight">DHR</span>
-                    </h1>
-                    <h2 class="hero-subtitle">
-                        World Class Law Firm In<br>
-                        <span class="location">Los Angeles & NYC.</span>
-                    </h2>
-                    <p class="hero-description">
-                        At a large firm, it is all too easy to feel lost. At Brown, we promise to value your concerns
-                        and ideas.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#demo" class="btn-demo">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                            </svg>
-                            Demoyu İzle
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Sağ Taraf - Görsel -->
-                <div class="hero-image">
-                    <div class="circular-image">
-                        <img src="../assets/img/banner2.png" alt="DHR Team">
-                    </div>
+            <div class="hero-content">
+               
+                <h1 class="hero-title-main">DHR ile İnsan Kaynakları  Süreçlerinizi Yönetin</h1>
+                <div class="hero-buttons">
+                    <a href="#demo" class="btn-demo-video">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="white" stroke-width="2"/>
+                            <polygon points="10,8 16,12 10,16" fill="white"/>
+                        </svg>
+                        Demoyu İzle
+                    </a>
                 </div>
             </div>
         </section>
+
+        
 
         <!-- Modüller Section -->
         <section id="moduller" class="modules-section">
-            <div class="modules-container">
-                <h2 class="section-title">
-                    <span class="highlight">Modüller</span>
-                </h2>
-
-
-                <div class="modules-grid">
-                    <!-- Modül 1: Personel Yönetimi -->
-                    <div class="module-card">
-                        <div class="module-icon">
-                            <img src="../assets/img/dhrfoto4.png" alt="Personel Yönetimi">
-                        </div>
-                        <div class="module-content">
-                            <h3 class="module-title">Personel Yönetimi</h3>
-                            <p class="module-description">Personel bilgilerini merkezi sistemde yönetin, organizasyon
-                                yapısını kolayca oluşturun.</p>
-                            <a href="#" class="module-link">Explore now ›</a>
-                        </div>
-                    </div>
-
-                    <!-- Modül 2: İzin ve Mesai Yönetimi -->
-                    <div class="module-card">
-                        <div class="module-icon">
-                            <img src="../assets/img/dhrfoto6.png" alt="İzin ve Mesai Yönetimi">
-                        </div>
-                        <div class="module-content">
-                            <h3 class="module-title">İzin ve Mesai Yönetimi</h3>
-                            <p class="module-description">İzin taleplerini onaylayın, mesai saatlerini takip edin ve
-                                raporlayın.</p>
-                            <a href="#" class="module-link">Explore now ›</a>
+            <div class="container">
+                <div class="text-start">
+                    <p class="modules-mini-title">Modüller</p>
+                </div>
+                <div class="text-center">
+                    <h1 class="display-5 mb-5">Tüm Modüller Tek Pakette</h1>
+                </div>
+                
+                <div class="row g-4">
+                    <!-- Sol Taraf - Modül Sekmeleri -->
+                    <div class="col-lg-4">
+                        <div class="nav nav-pills d-flex justify-content-between w-100 h-100 me-4">
+                            <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4 active"
+                                data-bs-toggle="pill" data-bs-target="#tab-personel" type="button">
+                                <h5 class="m-0"><i class="fa fa-users text-primary me-3"></i>Personel Yönetimi</h5>
+                            </button>
+                            <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
+                                data-bs-toggle="pill" data-bs-target="#tab-izin" type="button">
+                                <h5 class="m-0"><i class="fa fa-calendar-alt text-primary me-3"></i>İzin ve Mesai Yönetimi</h5>
+                            </button>
+                            <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-4"
+                                data-bs-toggle="pill" data-bs-target="#tab-bordro" type="button">
+                                <h5 class="m-0"><i class="fa fa-money-bill-wave text-primary me-3"></i>Bordro Yönetimi</h5>
+                            </button>
+                            <button class="nav-link w-100 d-flex align-items-center text-start border p-4 mb-0"
+                                data-bs-toggle="pill" data-bs-target="#tab-envanter" type="button">
+                                <h5 class="m-0"><i class="fa fa-boxes text-primary me-3"></i>Envanter ve Stok Takibi</h5>
+                            </button>
                         </div>
                     </div>
-
-                    <!-- Modül 3: Bordro Yönetimi -->
-                    <div class="module-card">
-                        <div class="module-icon">
-                            <img src="../assets/img/dhrfoto5.png" alt="Bordro Yönetimi">
-                        </div>
-                        <div class="module-content">
-                            <h3 class="module-title">Bordro Yönetimi</h3>
-                            <p class="module-description">Bordro hesaplamalarını otomatikleştirin, maaş ödemelerini
-                                kolayca yönetin.</p>
-                            <a href="#" class="module-link">Explore now ›</a>
-                        </div>
-                    </div>
-
-                    <!-- Modül 4: Envanter ve Stok Takibi -->
-                    <div class="module-card">
-                        <div class="module-icon">
-                            <img src="../assets/img/dhrfoto7.png" alt="Envanter ve Stok Takibi">
-                        </div>
-                        <div class="module-content">
-                            <h3 class="module-title">Envanter ve Stok Takibi</h3>
-                            <p class="module-description">Şirket envanterini ve stok hareketlerini dijital ortamda takip
-                                edin.</p>
-                            <a href="#" class="module-link">Explore now ›</a>
+                    
+                    <!-- Sağ Taraf - Modül Detayları -->
+                    <div class="col-lg-8">
+                        <div class="tab-content w-100">
+                            <!-- Personel Yönetimi -->
+                            <div class="tab-pane fade show active" id="tab-personel">
+                                <div class="row g-4">
+                                    <div class="col-md-6" style="min-height: 350px;">
+                                        <div class="position-relative h-100">
+                                            <img class="position-absolute rounded w-100 h-100" src="../assets/img/service-1.jpg"
+                                                style="object-fit: cover;" alt="Personel Yönetimi">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3 class="mb-4">Personel Bilgilerini Merkezi Sistemde Yönetin</h3>
+                                        <p class="mb-4">Çalışan bilgilerini tek bir platformda toplayın, organizasyon yapınızı kolayca oluşturun ve personel süreçlerinizi dijitalleştirin.</p>
+                                        <p><i class="fa fa-check text-primary me-3"></i>Detaylı Personel Profilleri</p>
+                                        <p><i class="fa fa-check text-primary me-3"></i>Organizasyon Şeması</p>
+                                        <p><i class="fa fa-check text-primary me-3"></i>Departman Yönetimi</p>
+                                        <a href="#" class="btn btn-primary py-3 px-5 mt-3">Daha Fazla</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- İzin ve Mesai Yönetimi -->
+                            <div class="tab-pane fade" id="tab-izin">
+                                <div class="row g-4">
+                                    <div class="col-md-6" style="min-height: 350px;">
+                                        <div class="position-relative h-100">
+                                            <img class="position-absolute rounded w-100 h-100" src="../assets/img/service-2.jpg"
+                                                style="object-fit: cover;" alt="İzin ve Mesai Yönetimi">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3 class="mb-4">İzin ve Mesai Süreçlerini Otomatikleştirin</h3>
+                                        <p class="mb-4">İzin taleplerini hızlıca onaylayın, mesai saatlerini takip edin ve raporlarınızı anında oluşturun.</p>
+                                        <p><i class="fa fa-check text-primary me-3"></i>Dijital İzin Takibi</p>
+                                        <p><i class="fa fa-check text-primary me-3"></i>Mesai Saati Yönetimi</p>
+                                        <p><i class="fa fa-check text-primary me-3"></i>Otomatik Onay Süreçleri</p>
+                                        <a href="#" class="btn btn-primary py-3 px-5 mt-3">Daha Fazla</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Bordro Yönetimi -->
+                            <div class="tab-pane fade" id="tab-bordro">
+                                <div class="row g-4">
+                                    <div class="col-md-6" style="min-height: 350px;">
+                                        <div class="position-relative h-100">
+                                            <img class="position-absolute rounded w-100 h-100" src="../assets/img/service-3.jpg"
+                                                style="object-fit: cover;" alt="Bordro Yönetimi">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3 class="mb-4">Bordro Süreçlerinizi Kolaylaştırın</h3>
+                                        <p class="mb-4">Maaş hesaplamalarını otomatikleştirin, bordro ödemelerini takip edin ve raporlama sürecinizi hızlandırın.</p>
+                                        <p><i class="fa fa-check text-primary me-3"></i>Otomatik Maaş Hesaplama</p>
+                                        <p><i class="fa fa-check text-primary me-3"></i>SGK ve Vergi Hesaplamaları</p>
+                                        <p><i class="fa fa-check text-primary me-3"></i>Dijital Bordro Fişleri</p>
+                                        <a href="#" class="btn btn-primary py-3 px-5 mt-3">Daha Fazla</a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Envanter ve Stok Takibi -->
+                            <div class="tab-pane fade" id="tab-envanter">
+                                <div class="row g-4">
+                                    <div class="col-md-6" style="min-height: 350px;">
+                                        <div class="position-relative h-100">
+                                            <img class="position-absolute rounded w-100 h-100" src="../assets/img/service-4.jpg"
+                                                style="object-fit: cover;" alt="Envanter ve Stok Takibi">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3 class="mb-4">Şirket Envanterini Dijital Ortamda Yönetin</h3>
+                                        <p class="mb-4">Tüm şirket demirbaşlarını, stok hareketlerini ve zimmet işlemlerini tek platformdan takip edin.</p>
+                                        <p><i class="fa fa-check text-primary me-3"></i>Demirbaş Takibi</p>
+                                        <p><i class="fa fa-check text-primary me-3"></i>Zimmet Yönetimi</p>
+                                        <p><i class="fa fa-check text-primary me-3"></i>Stok Hareket Raporları</p>
+                                        <a href="#" class="btn btn-primary py-3 px-5 mt-3">Daha Fazla</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
-        </section>
-
-        <!-- Nasıl Çalışır Section -->
-        <section id="nasil-calisir" style="min-height: 100vh; padding: 100px 20px; background: white;">
-            <div style="max-width: 1200px; margin: 0 auto;">
-                <h2 style="font-size: 3rem; text-align: center; margin-bottom: 3rem; color: #333;">Nasıl Çalışır</h2>
-                <p style="text-align: center; font-size: 1.2rem; color: #666;">İçerik buraya gelecek...</p>
             </div>
         </section>
 
-        <!-- İletişim Section -->
-        <section id="iletisim" style="min-height: 100vh; padding: 100px 20px; background: #f8f9fa;">
-            <div style="max-width: 1200px; margin: 0 auto;">
-                <h2 style="font-size: 3rem; text-align: center; margin-bottom: 3rem; color: #333;">İletişim</h2>
-                <p style="text-align: center; font-size: 1.2rem; color: #666;">İçerik buraya gelecek...</p>
+        <!-- Nasıl Çalışır / Why Choosing Us Section -->
+        <section id="nasil-calisir" class="feature-section py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <p class="d-inline-block border rounded text-primary fw-semi-bold py-1 px-3">Neden DHR?</p>
+                        <h1 class="display-5 mb-4">Hızlı Kurulum Güvenli Kullanım</h1>
+                        <p class="mb-4">DHR, modern işletmelerin insan kaynakları süreçlerini dijitalleştirmek için tasarlanmış, kullanıcı dostu ve güçlü bir platformdur. Tüm insan kaynakları süreçlerinizi tek bir platformda yönetin.</p>
+                        <a class="btn btn-primary py-3 px-5" href="#moduller">Daha Fazla</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="row g-4 align-items-center">
+                            <div class="col-md-6">
+                                <div class="row g-4">
+                                    <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                        <div class="feature-box border rounded p-4">
+                                            <i class="fa fa-bolt fa-3x text-primary mb-3"></i>
+                                            <h4 class="mb-3">Hızlı & Kolay</h4>
+                                            <p class="mb-3">Karmaşık İK süreçlerini basitleştirin. Tüm işlemlerinizi birkaç tıklama ile tamamlayın.</p>
+                                            <a class="fw-semi-bold" href="#moduller">Daha Fazla <i class="fa fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                        <div class="feature-box border rounded p-4">
+                                            <i class="fa fa-headset fa-3x text-primary mb-3"></i>
+                                            <h4 class="mb-3">7/24 Destek</h4>
+                                            <p class="mb-3">Uzman ekibimiz her zaman yanınızda. Sorularınız için hızlı ve etkili çözümler sunuyoruz.</p>
+                                            <a class="fw-semi-bold" href="#iletisim">İletişime Geç <i class="fa fa-arrow-right ms-1"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 wow fadeIn" data-wow-delay="0.7s">
+                                <div class="feature-box border rounded p-4">
+                                    <i class="fa fa-shield-alt fa-3x text-primary mb-3"></i>
+                                    <h4 class="mb-3">Güvenli & Emniyetli</h4>
+                                    <p class="mb-3">Verileriniz en yüksek güvenlik standartlarıyla korunur. SSL şifreleme ve yedekleme sistemleriyle gönül rahatlığı.</p>
+                                    <a class="fw-semi-bold" href="#" data-bs-toggle="modal" data-bs-target="#securityModal">Detaylar <i class="fa fa-arrow-right ms-1"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+
+        <!-- Security Modal -->
+        <div class="modal fade" id="securityModal" tabindex="-1" aria-labelledby="securityModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title" id="securityModalLabel">
+                            <i class="fa fa-shield-alt text-primary me-2"></i>Güvenli & Emniyetli
+                        </h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body p-4">
+                        <h4 class="mb-3">Verileriniz Bizimle Güvende</h4>
+                        <p class="mb-4">DHR, işletmenizin en değerli varlığı olan verilerinizi korumak için en üst düzey güvenlik önlemlerini alır.</p>
+                        
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <i class="fa fa-check-circle text-success fa-2x me-3"></i>
+                                    <div>
+                                        <h5>SSL Şifreleme</h5>
+                                        <p class="text-muted">Tüm verileriniz 256-bit SSL şifreleme ile korunur.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <i class="fa fa-check-circle text-success fa-2x me-3"></i>
+                                    <div>
+                                        <h5>Otomatik Yedekleme</h5>
+                                        <p class="text-muted">Verileriniz günlük olarak otomatik yedeklenir.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <i class="fa fa-check-circle text-success fa-2x me-3"></i>
+                                    <div>
+                                        <h5>KVKK Uyumlu</h5>
+                                        <p class="text-muted">Kişisel verilerin korunması kanununa tam uyumluluk.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex">
+                                    <i class="fa fa-check-circle text-success fa-2x me-3"></i>
+                                    <div>
+                                        <h5>İki Faktörlü Doğrulama</h5>
+                                        <p class="text-muted">Ekstra güvenlik katmanı ile hesap koruması.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer border-0">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                        <a href="#iletisim" class="btn btn-primary" data-bs-dismiss="modal">İletişime Geç</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- İletişim / Contact Section -->
+        <section id="iletisim" class="container-fluid py-5 mb-5">
+            <div class="container">
+                <div class="text-center mx-auto pb-5 wow fadeIn" data-wow-delay=".3s" style="max-width: 600px;">
+                    <h5 class="text-primary">Bize Ulaşın</h5>
+                    <h1 class="mb-3">DHR İle Tanışın</h1>
+                    
+                </div>
+                <div class="contact-detail position-relative p-5">
+                    <div class="row g-5 mb-5 justify-content-center">
+                        <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".3s">
+                            <div class="d-flex bg-light p-3 rounded">
+                                <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h4 class="text-primary">Adres</h4>
+                                    <a href="#" target="_blank" class="h5">Kurtköy Teknopark, İstanbul</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".5s">
+                            <div class="d-flex bg-light p-3 rounded">
+                                <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
+                                    <i class="fa fa-phone text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h4 class="text-primary">Bizi Arayın</h4>
+                                    <a class="h5" href="tel:+905xxxxxxxxx" target="_blank">+90 216 386 24 23</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-6 wow fadeIn" data-wow-delay=".7s">
+                            <div class="d-flex bg-light p-3 rounded">
+                                <div class="flex-shrink-0 btn-square bg-secondary rounded-circle" style="width: 64px; height: 64px;">
+                                    <i class="fa fa-envelope text-white"></i>
+                                </div>
+                                <div class="ms-3">
+                                    <h4 class="text-primary">Email Gönderin</h4>
+                                    <a class="h5" href="mailto:info@dhr.com" target="_blank">contact@d1-tech.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-5">
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay=".3s">
+                            <div class="p-5 h-100 rounded contact-map">
+                                <iframe class="rounded w-100 h-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.7497238759183!2d29.311297075853883!3d40.92123317136296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cadb6031a4dbed%3A0x97f56ea84f171cec!2sD1-Tech!5e0!3m2!1str!2str!4v1763455072409!5m2!1str!2str"     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 wow fadeIn" data-wow-delay=".5s">
+                            <div class="p-5 rounded contact-form">
+                                <div class="mb-4">
+                                    <input type="text" class="form-control border-0 py-3" placeholder="Adınız Soyadınız">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="email" class="form-control border-0 py-3" placeholder="Email Adresiniz">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="text" class="form-control border-0 py-3" placeholder="Şirket Adı">
+                                </div>
+                                <div class="mb-4">
+                                    <textarea class="w-100 form-control border-0 py-3" rows="6" cols="10" placeholder="Mesajınız"></textarea>
+                                </div>
+                                <div class="text-start">
+                                    <button class="btn bg-primary text-white py-3 px-5" type="button">Mesaj Gönder</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
         </section>
     </main>
 
     <script src="scripts/navbar.js"></script>
+    
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,150 @@
+/* Features / Why Choosing Us Section */
+.feature-section {
+    padding: 80px 20px;
+    background: #f8f9fa;
+}
+
+.feature-box {
+    background: #fff;
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid #e0e0e0 !important;
+}
+
+.feature-box:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+}
+
+/* Different hover colors for each box */
+.feature-section .row .col-md-6:nth-child(1) .feature-box:hover {
+    background: rgba(151, 26, 8, 0.08);
+    border-color: rgba(151, 26, 8, 0.3) !important;
+}
+
+.feature-section .row .col-md-6:nth-child(2) .feature-box:hover {
+    background: rgba(255, 193, 7, 0.12);
+    border-color: rgba(255, 193, 7, 0.4) !important;
+}
+
+.feature-section .row .col-md-6:last-child .feature-box:hover {
+    background: rgba(40, 167, 69, 0.08);
+    border-color: rgba(40, 167, 69, 0.3) !important;
+}
+
+.feature-box i {
+    transition: all 0.3s ease;
+}
+
+.feature-box i.text-primary {
+    color: #971A08 !important;
+}
+
+.feature-box:hover i {
+    transform: scale(1.1);
+}
+
+.feature-box h4 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1a1a2e;
+}
+
+.feature-box p {
+    color: #6c757d;
+    line-height: 1.8;
+    font-size: 0.95rem;
+}
+
+.feature-box a {
+    color: #971A08;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.feature-box a:hover {
+    color: #7a1506;
+    padding-left: 5px;
+}
+
+/* Feature Section Title Badge and Buttons */
+.feature-section .text-primary {
+    color: #4169E1 !important;
+    border-color: #4169E1 !important;
+}
+
+.feature-section .btn-primary {
+    background: #971A08;
+    border-color: #971A08;
+}
+
+.feature-section .btn-primary:hover {
+    background: #7a1506;
+    border-color: #7a1506;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.modal-header {
+    padding: 1.5rem 2rem;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a1a2e;
+}
+
+.modal-body {
+    padding: 2rem;
+}
+
+.modal-body h4 {
+    color: #1a1a2e;
+    font-weight: 600;
+}
+
+.modal-body h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.modal-footer {
+    padding: 1.5rem 2rem;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .feature-section {
+        padding: 60px 20px;
+    }
+    
+    .feature-section .display-5 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .feature-section {
+        padding: 50px 15px;
+    }
+    
+    .feature-section .display-5 {
+        font-size: 1.75rem;
+    }
+    
+    .feature-box {
+        margin-bottom: 1rem;
+    }
+    
+    .modal-body {
+        padding: 1.5rem;
+    }
+}
